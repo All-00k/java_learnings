@@ -1,0 +1,7 @@
+
+# this how to return a array function:
+public int[] twoSum(int[] nums, int target)
+      return new int[] {i, j}
+
+#for strings
+str.equals(res.toString()); # to check whether string res is equal to str or not, it return bool values.....
