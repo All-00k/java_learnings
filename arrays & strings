@@ -5,3 +5,16 @@ public int[] twoSum(int[] nums, int target)
 
 #for strings
 str.equals(res.toString()); # to check whether string res is equal to str or not, it return bool values.....
+
+...............   String name1 = "alok";
+                  String name2 = "alok";
+                  Only one object "alok" exists in the String Pool. Both name1 and name2 store the same reference (address) pointing to that single object. So name1 == name2 → true
+
+
+
+                  String name3 = new String("alok");
+                  Here a new object is created in the heap (outside the pool). name3 will store a different reference (address).
+                  
+                  So: name1 == name3 → false (different addresses)    and  name1.equals(name3) → true (same content)....................
+                  
+
