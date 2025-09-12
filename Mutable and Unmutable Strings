@@ -1,0 +1,21 @@
+-----------------------------------------MUTABLE AND UNMUTABLE STRINGS-------------------------------
+
+suppose we create 
+String str="Mathura";    //here str is a referance variable which is refering to the address of "Mathura" object.
+now str=str+" city";     // concatination "Mathura" with "City" and storing it in str.. maeans now str is referaning to the adress of  "Mathura City" (its a new object in the heap)
+
+ # what actually happpened it is previously str pointed hold address of "Mathura" and after that it shows addresss of  "Mathura City"...
+   but still the "Mathura" object still lies in String Constant Pool...
+
+  # "Yes, the initial "Mathura" was a distinct String object (in the string pool), and str was a reference variable pointing to it.
+After concatenation, str points to a new String object ("Mathura city").
+
+The immutability property applies to the String objects themselves, not the variables that reference them.
+The reference variable str can change what it refers to, but the underlying String objects don’t change"
+ 
+System.out.println(str);//here we get Mathura city
+
+-- do you think we change in existing "Mathura" object 
+then answer is no because String is immutable type which cannot further changed.
+-- here reference variable str pointing to new object that  is "Mathura city";
+-- and "Mathura" object ready for garbage collection because no variable pointing the "Mathura" object.
