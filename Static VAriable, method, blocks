@@ -1,0 +1,64 @@
+Static VAriable---:
+
+let say......................
+                            class A{ 
+                                  static int a = 10;
+                                  }
+this means variable a is not instance but a static variable which means not variable a is independent on object creation and also every object of that class can use that object;
+ #A static variable is shared across all objects of the same class, so if you change the static variable using one object, the change is reflected in all objects.
+
+'''''''''Static variables are shared across all objects of the same class.
+                      Changing a static variable via one object (or the class itself) changes it for all objects.
+                          In contrast, instance variables are unique to each object'''''''''''''''''''''
+When memory get allocated
+= for that we need to know some term 
+a)stack area b)heap area c)class loader system 
+Step 1: when you compile the code you get .class file 
+Step 2: when you are executing (java MainClass) first class loading to class loader System.
+Step 3: During class loading static variable initialize, static block get executed.
+Step 4: Since, static variable got memory in heap before object creation. Now we can say that it is independent of object.
+
+Class Calc{
+    static int stA=100; //independent of object // we can use this by class name as well as object
+    int  inB=100;  //dependent of object //we can only use this by object
+
+public static void main(String []args){
+Calc obj1=new Calc(); 
+Calc obj1=new Calc();
+//for static variable
+System.out.println(Calc.stA); //to call static variable we can use with class name
+System.out.println(obj1.stA);  //use by object name
+
+//for instance variable
+//System.out.println(Calc.inB); //got an error --Cannot make a static reference to the non-static variable
+System.out.println(obj1.inB); //used by object name reference 
+
+// = if we can change value static or instance what happen 
+obj1.inB=1000; //instance
+obj1.stA=2000; //static
+
+//static 
+System.out.println(obj1.stA);//output: 2000
+System.out.println(obj2.stA);//output: 2000 value changed for both obj1 and obj2 
+//it also show that static variable independent of objects
+
+//instance 
+System.out.println(obj1.inB); // output: 1000
+System.out.println(obj2.inB); // output: 100 no change in obj2
+}
+
+
+Static Method-------:
+ remember we can call static method with object reference or class name  e.g ClassName.staticMethod() or objReference.statiMethod()
+= but non static method dependent on object so it can be called only  by object reference. e.g objReference.nonStaticMethod();
+example: MAth.pow() is a static mehthod
+
+
+Static Block--------:
+runs before main() method which means runs before the object is being created..cause we are creating object in main() method,... 
+# main method executes after the static block execution (at the time when main class is beign loaded)....
+steps:
+1.JVM loads the class 
+2. static block is being executed
+3, main method is exectued
+
