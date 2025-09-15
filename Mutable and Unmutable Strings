@@ -1,4 +1,4 @@
------------------------------------------MUTABLE AND UNMUTABLE STRINGS-------------------------------
+-----------------------------------------MUTABLE AND IMMUTABLE STRINGS-------------------------------
 
 suppose we create 
 String str="Mathura";    //here str is a referance variable which is refering to the address of "Mathura" object.
