@@ -1,6 +1,6 @@
 -----------------------------------------MUTABLE AND IMMUTABLE STRINGS-------------------------------
 
-suppose we create 
+suppose we create a String
 String str="Mathura";    //here str is a referance variable which is refering to the address of "Mathura" object.
 now str=str+" city";     // concatination "Mathura" with "City" and storing it in str.. maeans now str is referaning to the adress of  "Mathura City" (its a new object in the heap)
 
