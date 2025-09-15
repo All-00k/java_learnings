@@ -1,0 +1,7 @@
+# charAt(index) returns a char, not a String..
+type cast a char to string
+      char myChar = 'A';
+          String myString = String.valueOf(myChar);
+
+mystr.replace(str1,str2)     //this will search every str1 in mystr and make a changto str2
+
