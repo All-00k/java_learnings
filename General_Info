@@ -1,0 +1,18 @@
+#every java fiel use the package 
+import java.lang.*;
+
+#on object creation:-
+MyClass obj = new MyClass();   //MyClass() is a constructor.....
+
+#We can use a method of a Class into another Class by making object of first class in second class's main  function and then callling the method with the help of object created......
+
+#while doing inheritance we can excess public, protected, default parameters(methods, variables) in child classes.....we can not do it for private stuffs..
+
+#INHERITANCE :-----
+                Is-a and Has-a
+              
+
+
+
+
+
