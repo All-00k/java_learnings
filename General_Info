@@ -10,6 +10,10 @@ MyClass obj = new MyClass();   //MyClass() is a constructor.....
 
 #INHERITANCE :-----
                 Is-a and Has-a
+
+
+# To change a Integer to STring
+String str_Name = String.valueOf(That_Integer);
               
 
 
