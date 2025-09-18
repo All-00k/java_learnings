@@ -14,6 +14,11 @@ MyClass obj = new MyClass();   //MyClass() is a constructor.....
 
 # To change a Integer to STring
 String str_Name = String.valueOf(That_Integer);
+
+
+
+# With static, count belongs to the class (shared among all objects).
+# Without static, count belongs to each object (separate copy for each).
               
 
 
