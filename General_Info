@@ -19,7 +19,11 @@ String str_Name = String.valueOf(That_Integer);
 
 # With static, count belongs to the class (shared among all objects).
 # Without static, count belongs to each object (separate copy for each).
-              
+
+#how to change int to string
+//int myInteger = 123;
+//String myString = String.valueOf(myInteger);
+             
 
 
 
