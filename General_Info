@@ -23,6 +23,11 @@ String str_Name = String.valueOf(That_Integer);
 #how to change int to string
 //int myInteger = 123;
 //String myString = String.valueOf(myInteger);
+
+
+# The Garbage Collector (GC) in Java is an automatic memory management system that reclaims memory occupied by objects that are no longer used or referenced by a running Java program.
+  This process helps prevent memory leaks and ensures efficient use of the Java Virtual Machine (JVM)'s heap memory.
+
              
 
 
