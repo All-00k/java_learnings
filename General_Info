@@ -40,6 +40,9 @@ lets see it as:=
         }
     }
 
+
+# if any method is static we can access it with the help of Class itself
+        let say static void show() is method of ABC class so --> ABC.show() is the way to call method with the help of class itself
              
 
 
